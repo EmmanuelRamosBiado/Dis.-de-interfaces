@@ -1,0 +1,95 @@
+body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: blue;
+    margin: 10px;
+    padding: 10px;
+}
+
+.elemHeader {
+    
+    background-color: violet;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+
+.MenuIzq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: greenyellow;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+
+.elemMenuizq {
+    background-color: yellow;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+
+.contMain {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    background-color: coral;
+    margin: 10px;
+    padding: 10px;
+}
+
+.elemMain {
+    background-color: darkgreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.contAside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    float: right;
+}
+
+.elemAside {
+    background-color: cadetblue;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+
+.contFooter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+}
+
+.elemFooter {
+    background-color: goldenrod;
+    text-align: center;
+    padding: 25px;
+    margin: 10px;
+}
+
+.central{
+    display: flex;
+    width: auto;
+}
+
