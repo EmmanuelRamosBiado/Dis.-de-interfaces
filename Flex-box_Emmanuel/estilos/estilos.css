@@ -6,19 +6,30 @@ body {
 
 .contHeader {
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     align-items: center;
+    justify-content: space-between;
     background-color: blue;
     margin: 10px;
     padding: 10px;
 }
 
 .elemHeader {
-    
     background-color: violet;
     text-align: center;
     padding: 25px;
     margin: 10px;
+}
+
+#menuHeader {
+    width: 60%;
+    text-align: left;
+}
+
+.central {
+    display: flex;
+    width: auto;
+    height: auto;
 }
 
 .MenuIzq {
@@ -28,12 +39,11 @@ body {
     background-color: greenyellow;
     width: 150px;
     margin: 10px;
-    padding: 10px;
     float: left;
 }
 
 .elemMenuizq {
-    background-color: yellow;
+    background-color: orange;
     text-align: center;
     padding: 25px;
     margin: 10px;
@@ -41,11 +51,11 @@ body {
 
 .contMain {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
     background-color: coral;
     margin: 10px;
-    padding: 10px;
 }
 
 .elemMain {
@@ -58,10 +68,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: pink;
+    background-color: red;
     width: 150px;
     margin: 10px;
-    padding: 10px;
     float: right;
 }
 
@@ -75,7 +84,7 @@ body {
 .contFooter {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     background-color: aqua;
     margin: 10px;
     padding: 10px;
@@ -87,9 +96,3 @@ body {
     padding: 25px;
     margin: 10px;
 }
-
-.central{
-    display: flex;
-    width: auto;
-}
-
