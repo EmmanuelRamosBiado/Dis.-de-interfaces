@@ -1,8 +1,95 @@
 @media (max-width: 1200px){
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .uno, .dos, .tres, .cuatro, .cinco{
+        height: 5rem;
+        font-size: 4rem;
+    }
 
+    .uno, .tres{
+        color: black;
+    }
+
+    .dos{
+        color: white;
+    }
+
+    .uno, .dos, .tres{
+        flex-basis: 30%;
+    }
+
+    .cuatro, .cinco{
+        flex-basis: 45%;
+    }
+
+    .cuatro{
+        background-color: aliceblue;
+        border: 5px solid deepskyblue;
+        color: deepskyblue;
+    }
+
+    .cinco{
+        color:blueviolet;
+    }
 }
 
 @media (min-width: 1201px){
-    
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: baseline;
+    }
+
+    .uno, .dos, .tres, .cuatro, .cinco{
+        height:10rem;
+        font-size: 2rem;
+        color: black;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        flex-grow: 1;
+    }
+
+    .cuatro{
+        background-color: deepskyblue;
+    }
+
+    .cinco{
+        flex-grow: 5;
+    }
 }
 
+body{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.uno {
+    background-color: orange;
+    margin: 10px;
+}
+
+.dos {
+    background-color: grey;
+    margin: 10px;
+}
+
+.tres {
+    background-color: green;
+    margin: 10px;
+}
+
+.cuatro {
+    margin: 10px;
+}
+
+.cinco {
+    background-color: aliceblue;
+    border: 5px blueviolet solid;
+    margin: 10px;
+}

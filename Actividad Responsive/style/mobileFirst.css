@@ -24,8 +24,11 @@
 
     .uno, .dos, .tres, .cuatro, .cinco{
         height: 6rem;
-        width: 45%;
         font-size: 5rem;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        flex-grow: 1;
     }
 
     .cinco{
