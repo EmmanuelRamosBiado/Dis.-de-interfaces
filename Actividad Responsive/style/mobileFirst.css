@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .uno, .dos, .tres, .cuatro, .cinco{
+        height: 7rem;
+        font-size: 6rem;
+    }
+
+    .cinco{
+        background-color: blueviolet;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .uno, .dos, .tres, .cuatro, .cinco{
+        height: 6rem;
+        width: 45%;
+        font-size: 5rem;
+    }
+
+    .cinco{
+        flex-basis: 100%;
+        background-color: aliceblue;
+        color: blueviolet;
+        border: 5px blueviolet solid;
+    }
+}
+
+body{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.uno {
+    background-color: orange;
+    color: black;
+    margin: 10px;
+}
+
+.dos {
+    background-color: grey;
+    color: white;
+    margin: 10px;
+}
+
+.tres {
+    background-color: green;
+    color: white;
+    margin: 10px;
+}
+
+.cuatro {
+    background-color: deepskyblue;
+    color: white;
+    margin: 10px;
+}
+
+.cinco {
+    margin: 10px;
+}
