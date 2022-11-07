@@ -9,6 +9,10 @@
         font-size: 6rem;
     }
 
+    .tres {
+        color: white;
+    }
+
     .cinco{
         background-color: blueviolet;
     }
@@ -28,7 +32,11 @@
     }
 
     .uno, .dos, .tres, .cuatro{
-        flex-grow: 1;
+        flex-basis: 46%;
+    }
+
+    .tres{
+        color: black;
     }
 
     .cinco{
@@ -59,7 +67,7 @@ body{
 
 .tres {
     background-color: green;
-    color: white;
+    
     margin: 10px;
 }
 
