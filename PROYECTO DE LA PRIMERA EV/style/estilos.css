@@ -1,74 +1,109 @@
+/* Para todos los dispositivos móviles */
+@media (max-width: 479px) {
+    
+}
+
+/* Para todos los dispositivos tablets */
+@media (max-width: 992px) {
+
+}
+
 @font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto-Regular.ttf);
+    font-family: quicksand;
+    src: url(../fonts/Quicksand-Regular.ttf);
 }
 
 h1{
+    font-size: 1.5rem;
     color: rgb(15, 227, 117);
 }
 
 h3{
+    font-size: 1rem;
     color: rgb(0, 98, 38);
 }
 
+h2+p::first-letter{
+    font-size: 3rem;
+}
+
 body{
-    font-family: roboto;
+    font-family: quicksand;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
 }
 
+
 .cabecera{
+
     margin-top: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 1.5rem;
+    
 }
 
-main,header, hr{
+.logoNombre{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuCabecera{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menuCabecera>a>div:hover{
+    background-color: white;
+    border: 2px solid greenyellow;
+    box-shadow: none;
+}
+
+.menuCabecera>a{
+    text-decoration: none;
+    color: black;
+}
+
+main,header{
     width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .logo>img{
-    height: 13rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 main{
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     margin-top: 5rem;
     font-size: 20px;
 }
 
-.menuMain{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.menuMain>a>div:hover{
-    background-color: white;
-    border: 2px solid greenyellow;
-}
-
-.menuMain>a{
-    text-decoration: none;
-    color: black;
+.imagenHome{
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 .botonMenu{
     border-radius: 20px;
     background-color: greenyellow;
-    padding: 1.5rem;
+    padding: 0.4rem;
     margin: 0.5rem;
     border: 2px solid greenyellow;
     font-size: 1.7rem;
+    box-shadow: 3px 3px 3px #888888;
+    font-size: 1rem;
 }
 
 .menuFooter{
