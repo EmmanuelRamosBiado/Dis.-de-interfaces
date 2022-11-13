@@ -104,12 +104,6 @@
         margin-right: 1rem;
     }
 
-    .imagenHome {
-        width: 50%;
-        display: block;
-        margin: auto;
-    }
-
     .botonMenu {
         border-radius: 20px;
         background-color: greenyellow;
@@ -129,10 +123,16 @@
         text-decoration: none;
     }
 
-    .proyectoPortfolio>img {
+    .proyectoPortfolio>img, .imagenHome, #backend{
         width: 50%;
         display: block;
         margin: auto;
+    }
+
+    #miFoto{
+        float: left;
+        width: 25%;
+        margin: 25px;
     }
 
     .botonPortfolio {
@@ -163,7 +163,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 30px;
-
     }
 
     .footerRedes {
