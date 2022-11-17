@@ -46,6 +46,28 @@
         <h2>ACERCA DE</h2>
         <!--Completar-->
 
+        <p>Para este proyecto, empecé a desarrollar la página web para la versión desktop (<b>Desktop first </b>), luego lo adapté para la versión de tablet y por último la versión de móvil</p>
+
+        <!-- Cabecera -->
+        <p>En las tres versiones incluye una cabecera en la que se encunetra el logo, mi nombre, mi perfil profesional (desarrollador de aplicaiones web) y un menú con botones para navegar por las páginas. <br>
+        La posición de la cabecera es fija, esto se consigue utilizando <code>position: sticky</code>. <br>
+        Dentro de la cabecera hay un div (<code>class="cabecera"</code>) donde se encuentran los divs del logo con el nombre y el perfil profesional (<code>class="logoNombre"</code>) y el div del menú de navegación (<code>class="menuCabecera"</code>).<br>
+        Para la versión de ordenador, el div <code>class="cabecera"</code> tiene un <code>flex-direction: row</code>, pero para la versión de móvil y tablet, es <code>flex-direction: column</code><br>
+        </p>
+
+        <!-- Main-->
+        <p>Al pulsar un botón del menú de navegación, se cargará la nueva página con una animación (el main se mueve hacia la derecha), esto se consigue con un <code>@keyframe</code></p>
+
+        <!-- Footer -->
+        <p>El footer tiene un div (<code>class="menuFooter" </code>) en el que hay otros 3 div:</p> 
+        <ol>
+            <ul>El primer div (<code>class="footerRedes"</code>) en el que se encuentran los iconos de las redes sociales.</ul>
+            <ul>El segundo div (<code>class="footerLogo"</code>) está mi logotipo.</ul>
+            <ul>Y en el último div (<code>class="footerContacto"</code>) está mi correo electrónico y mi número de teléfono (el número es falso).</ul>
+        </ol>
+        <p>Al igual que en la cabecera, en la versión de desktop el div <code>class="menuFooter"</code> tiene <code>flex-direction: row</code> y en las versiones de móvil y tablet tiene <code>flex-direction: column</code>
+        </p>
+
         <p>
             <a
                 href="https://www.figma.com/file/mututrE0hDWQkAe3WKR8RN/Proyecto-de-la-primera-evaluaci%C3%B3n?node-id=0%3A1&t=SFYRl1K9M2WlWbU2-0">El
