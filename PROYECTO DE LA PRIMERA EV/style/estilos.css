@@ -34,7 +34,7 @@
         border-radius: 10px;
         padding: 0.4rem;
         margin: 0.5rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .proyectoPortfolio>img,
@@ -133,8 +133,8 @@
 
     .botonAnimado {
         padding: 1.1rem;
-        width: auto;
-        font-size: 1rem;
+        width: 45%;
+        font-size: 1.5rem;
     }
 
     .curriculum {
@@ -215,7 +215,7 @@
 
     .botonAnimado {
         padding: 1.1rem;
-        width: auto;
+        width: 70%;
         font-size: 1rem;
     }
 
@@ -241,9 +241,7 @@
 
 }
 
-
-
-
+/* Fuente que se utiliza en todo el proyecto */
 @font-face {
     font-family: quicksand;
     src: url(../fonts/Quicksand-Regular.ttf);
@@ -251,6 +249,10 @@
 
 h1 {
     color: rgb(15, 227, 117);
+}
+
+h2 {
+    color: cadetblue;
 }
 
 h3 {
@@ -330,6 +332,7 @@ main {
     animation-name: haciaDerecha;
 }
 
+/* Animación que desliza el main hacia la izquierda */
 @keyframes haciaDerecha {
     from {
         opacity: 0;
@@ -381,6 +384,7 @@ div.proyectoPortfolio {
     animation: pulso 2s infinite;
 }
 
+/* Animación para el botón */
 @keyframes pulso {
     0% {
         transform: scale(0.95);

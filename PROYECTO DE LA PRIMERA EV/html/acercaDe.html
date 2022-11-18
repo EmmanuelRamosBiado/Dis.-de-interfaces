@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/estilos.css">
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
     <title>Acerca De</title>
 </head>
 
@@ -46,49 +47,83 @@
         <h2>ACERCA DE</h2>
         <!--Completar-->
 
-        <p>Para este proyecto, empecé a desarrollar la página web para la versión desktop (<b>Desktop first </b>), luego lo adapté para la versión de tablet y por último la versión de móvil</p>
+        <p>Para este proyecto, empecé a desarrollar la página web para la versión desktop (<b>Desktop first </b>), luego
+            lo adapté para la versión de móvil y por último la versión de tablet</p>
 
         <!-- Cabecera -->
-        <p>En las tres versiones incluye una cabecera en la que se encunetra el logo, mi nombre, mi perfil profesional (desarrollador de aplicaiones web) y un menú con botones para navegar por las páginas. <br>
-        La posición de la cabecera es fija, esto se consigue utilizando <code>position: fixed</code>. <br>
-        Dentro de la cabecera hay un div (<code>class="cabecera"</code>) donde se encuentran los divs del logo con el nombre y el perfil profesional (<code>class="logoNombre"</code>) y el div del menú de navegación (<code>class="menuCabecera"</code>).<br>
-        Para la versión de ordenador, el div <code>class="cabecera"</code> tiene un <code>flex-direction: row</code>, pero para la versión de móvil y tablet, es <code>flex-direction: column</code><br>
+        <p>En las tres versiones incluye una cabecera en la que se encunetra el logo, mi nombre, mi perfil profesional
+            (desarrollador de aplicaiones web) y un menú con botones para navegar por las páginas. <br>
+            La posición de la cabecera es fija, esto se consigue utilizando <code>position: fixed</code>. <br>
+            Dentro de la cabecera hay un div (<code>class="cabecera"</code>) donde se encuentran los divs del logo con
+            el nombre y el perfil profesional (<code>class="logoNombre"</code>) y el div del menú de navegación
+            (<code>class="menuCabecera"</code>).<br>
+            Para la versión de ordenador, el div <code>class="cabecera"</code> tiene un
+            <code>flex-direction: row</code>, pero para la versión de móvil y tablet, es
+            <code>flex-direction: column</code><br>
         </p>
 
-        <!-- Main-->
-        <p>Al pulsar un botón del menú de navegación, se cargará la nueva página con una animación (el main se mueve hacia la derecha), esto se consigue con un <code>@keyframe</code></p>
+        <!-- Animación del main -->
+        <p>Al pulsar un botón del menú de navegación, se cargará la nueva página con una animación (el main se mueve
+            hacia la izquierda), esto se consigue con un <code>@keyframe</code></p>
+
+        <!-- Mi foto -->
+        <p>La foto que se encuentra en la página "sobreMi.html" en la versión de desktop tiene un
+            <code>float: left</code>, en la versión de talbet tiene un <code>float: rigth</code> y en la versión de
+            móvil no tiene nada, está centrado.
+        </p>
+
+        <!-- Mi Portfolio -->
+        <p>El la página de miPortfolio.html hay 4 proyectos que se encuentran en un div cada uno. Dentro del div hay un
+            <code>h4</code> donde está el título del trabajo, una imágen del código del proyecto o del progrma en
+            ejecución centrado, una descripción del proyecto y un botón que abre una nueva pestaña al Github del
+            proyecto.
+        </p>
+
+        <!-- Animación del botón -->
+        <p>El botón de los proyectos en la página de los portoflios tiene una pequeña animación, se agranda, se vuelve
+            pequeño y vuelve a repetirlo infinitamente, también tiene una pequeña sombra que se expande, luego se
+            difumina y se repite el proceso. Esto se consigue con un <code>@keyframe</code></p>
 
         <!-- Footer -->
-        <p>El footer tiene un div (<code>class="menuFooter" </code>) en el que hay otros 3 div:</p> 
-        <ol>
-            <ul>El primer div (<code>class="footerRedes"</code>) en el que se encuentran los iconos de las redes sociales.</ul>
-            <ul>El segundo div (<code>class="footerLogo"</code>) está mi logotipo.</ul>
-            <ul>Y en el último div (<code>class="footerContacto"</code>) está mi correo electrónico y mi número de teléfono (el número es falso).</ul>
-        </ol>
-        <p>Al igual que en la cabecera, en la versión de desktop el div <code>class="menuFooter"</code> tiene <code>flex-direction: row</code> y en las versiones de móvil y tablet tiene <code>flex-direction: column</code>
+        <p>El footer tiene un div (<code>class="menuFooter" </code>) en el que hay otros 3 div:</p>
+
+        <p> El primer div (<code>class="footerRedes"</code>) en el que se encuentran los iconos de las redes sociales.
+            El segundo div (<code>class="footerLogo"</code>) está mi logotipo.
+            Y en el último div (<code>class="footerContacto"</code>) está mi correo electrónico y mi número de teléfono
+            (el número es falso).</p>
+
+        <p>Al igual que en la cabecera, en la versión de desktop el div <code>class="menuFooter"</code> tiene
+            <code>flex-direction: row</code> y en las versiones de móvil y tablet tiene
+            <code>flex-direction: column</code>
         </p>
 
+        <!-- Prototipado del proyecto -->
+        <p>Utiliza el siguiente botón para ver el prototipado de este proyecto, como puedes observar se han implementado
+            algunos cambios.</p>
+
         <div class="botonExt">
-            <a
-                href="https://www.figma.com/file/mututrE0hDWQkAe3WKR8RN/Proyecto-de-la-primera-evaluaci%C3%B3n?node-id=0%3A1&t=SFYRl1K9M2WlWbU2-0" target="_blank"><div class="botonAnimado">El
-                prototipado del proyecto</div></a>
-                </div>
+            <a href="https://www.figma.com/file/mututrE0hDWQkAe3WKR8RN/Proyecto-de-la-primera-evaluaci%C3%B3n?node-id=0%3A1&t=SFYRl1K9M2WlWbU2-0"
+                target="_blank">
+                <div class="botonAnimado">El prototipado del proyecto</div>
+            </a>
+        </div>
+
+        <!-- Validación del css-->
+        <p>A continuación te muestro las imágenes que indican que el css ha sido validado correctamente:</p>
 
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
                     alt="¡CSS Válido!" />
             </a>
         </p>
 
         <p>
             <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
                     alt="¡CSS Válido!" />
-                </a>
-            </p>
+            </a>
+        </p>
     </main>
 
     <footer>
