@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Canvas</title>
+    <script type="text/JavaScript">
+        function dibujar() {
+
+        var milienzo = document.getElementById("canvas01");
+
+        var cielo = milienzo.getContext("2d");
+        cielo.fillStyle = "#00F7FF";
+        cielo.fillRect(0,0, 400, 225);
+
+        var arena = milienzo.getContext("2d");
+        cielo.fillStyle = "#1CE500";
+        cielo.fillRect(0,210, 400, 100);
+
+        var sol = milienzo.getContext("2d");
+        sol.beginPath();
+        sol.arc(55,60,50, 0, 2*Math.PI);
+        sol.fillStyle='#FFFF00';
+        sol.strokeStyle = '#FFFF00';
+        sol.fill();
+        sol.stroke();
+        
+        }
+        </script>
+</head>
+
+<body onload="JavaScript:dibujar();">
+
+    <h1>CANVAS</h1>
+
+    <p>Canvas es un elemento HTML incorporado en HTML5 que permite la generación de gráficos dinámicamente por medio del
+        scripting. Entre otras cosas, permite la renderización interpretada dinámica de gráficos 2D y mapas de bits, así
+        como animaciones con estos gráficos.</p>
+    <p>A primera vista, un elemento <code>canvas</code> es parecido al elemento <code>img</code>, con la diferencia que
+        este no tiene los atributos src y alt. El elemento <code>canvas</code> tiene solo dos atributos - width y
+        height. Ambos son opcionales y pueden ser definidos usando propiedades DOM (en-US). Cuando los atributos ancho y
+        alto no estan especificados, el lienzo se inicializara con 300 pixels ancho y 150 pixels de alto. El elemento
+        puede ser arbitrariamente redimensionado por CSS, pero durante el renderizado la imagen es escalada para
+        ajustarse al tamaño de su layout. Si el tamaño del CSS no respeta el ratio del canvas inicial, este aparecerá
+        distorsionado.</p>
+
+    <p>El atributo id no está especificado para el elemento <code>canvas</code> pero es uno de los atributos globales de HTML el cual puede ser aplicado a cualquier elemento HTML (como class por ejemplo). Siempre es buena idea proporcionar un id porque esto hace más fácil identificarlo en un script. El elemento <code>canvas</code> puede ser estilizado como a cualquier imagen normal (margin, border, background, etc).Estas reglas, sin embargo, no afectan a lo dibujado sobre el canvas. Mas adelante veremos cómo se hace esto en un capítulo dedicado en este tutorial. Cuando no tenemos reglas de estilo aplicadas al canvas, este será completamente transparente.</p>
+
+    <p>El elemento <code>canvas</code> se diferencia de un tag <code>img</code> en que, como los elementos <code>vid</code>, <code>audio</code> o <code>picture</code>, es fácil definir contenido alternativo (fallback content) para mostrarse en navegadores viejos que no soporten el elemento <code>canvas</code>, como versiones de Internet Explorer previas a la versión 9 o navegadores de texto. Siempre debes proporcionar contenido alternativo para mostrar en estos navegadores.
+
+        Proporcionar contenido alternativo es muy explicito: solo debemos insertar el contenido alterno dentro del elemento <code>canvas</code>. Los navegadores que no soporten <code>canvas</code> ignoraran el contenedor y mostrarán el contenido indicado dentro de este. Navegadores que soporten <code>canvas</code> ignorarán el contenido en su interior (de las etiquetas), y mostrarán el canvas normalmente.</p>
+
+    <p>Para más información puedes visitar la siguiente página web de <a
+            href="https://www.w3schools.com/html/html5_canvas.asp"> W3Schools</a></p>
+
+    <canvas id="canvas01" width="400" height="300" style="border:1px solid "></canvas>
+
+
+</body>
+
+</html>
