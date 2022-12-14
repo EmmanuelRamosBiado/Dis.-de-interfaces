@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&display=swap");
+body {
+  background-color: black;
+  width: 75%;
+  margin: auto;
+}
+
+.tituloParrafo {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  color: rgb(255, 0, 174);
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Roboto";
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+p {
+  color: white;
+  text-align: justify;
+  font-family: "Raleway";
+  font-size: 1.25rem;
+}/*# sourceMappingURL=estilos.css.map */

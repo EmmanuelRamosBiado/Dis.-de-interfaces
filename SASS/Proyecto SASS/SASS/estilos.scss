@@ -1,0 +1,51 @@
+// Variables de color
+$bodyColor: black;
+$tituloColor: rgb(255, 0, 174);
+$parrafoColor: white;
+
+// Fuentes y variables para las fuentes
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+$roboto: 'Roboto';
+$raleway: 'Raleway';
+
+
+body {
+    background-color: $bodyColor;
+    width: 75%;
+    margin: auto;
+}
+
+.tituloParrafo {
+    margin: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+}
+
+h2 {
+    color: $tituloColor;
+
+    text: {
+        align: center;
+        decoration: underline;
+    }
+
+    font: {
+        family: $roboto;
+        size: 1.75rem;
+        weight: bold;
+    }
+}
+
+p {
+    color: $parrafoColor;
+    text: {
+        align: justify;
+        
+    }
+
+    font: {
+        family: $raleway;
+        size: 1.25rem;
+    }
+}
