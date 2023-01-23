@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Grupos de listas y tarjetas</title>
+</head>
+
+<body>
+
+    <h1>Grupos de listas</h1>
+
+    <h2>Lista básica</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item">Primer objeto</li>
+        <li class="list-group-item">Segundo objeto</li>
+        <li class="list-group-item">Tercer objeto</li>
+        <li class="list-group-item">Cuarto objeto</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Primer objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Segundo objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Tercer objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Cuarto objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Mostrar elemento como activo</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item active">Elemento activo</li>
+        <li class="list-group-item">No activo</li>
+        <li class="list-group-item">No activo</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item active&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Elemento activo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>No activo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>No activo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Deshabilitar un elemento de la lista</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item disabled">Elemento deshabilitado</li>
+        <li class="list-group-item">No activo</li>
+        <li class="list-group-item">No activo</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item disabled&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Elemento deshabilitado<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>No activo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>No activo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Enlaces y botones</h2>
+
+    <div class="list-group">
+        <a href="https://www.iestetuan.es/cmsj/" class="list-group-item list-group-item-action" aria-current="true">IES
+            Tetuán</a>
+        <a href="https://www.w3schools.com/" class="list-group-item list-group-item-action active">W3school (Activo)</a>
+        <a href="https://www.google.es/" class="list-group-item list-group-item-action disabled">Google
+            (Deshabilitado)</a>
+    </div>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;a</span> <span style="color: #336699">href=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;https://www.iestetuan.es/cmsj/&quot;</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-action&quot;</span> <span style="color: #336699">aria-current=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;true&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>IES
+            Tetuán<span style="color: #bb0066; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;a</span> <span style="color: #336699">href=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;https://www.w3schools.com/&quot;</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-action&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>W3school<span style="color: #bb0066; font-weight: bold">&lt;/a&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;a</span> <span style="color: #336699">href=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;https://www.google.es/&quot;</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-action&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Google<span style="color: #bb0066; font-weight: bold">&lt;/a&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Eliminar algunos bordes y esquinas redondeadas</h2>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Primer objeto</li>
+        <li class="list-group-item">Segundo objeto</li>
+        <li class="list-group-item">Tercer objeto</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group list-group-flush&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Primer objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Segundo objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Tercer objeto<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Enumerar una lista</h2>
+
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">Primero de la lista</li>
+        <li class="list-group-item">Segundo de la lista</li>
+        <li class="list-group-item">Tercero de la lista</li>
+    </ol>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ol</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group list-group-numbered&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Primero de la lista<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Segundo de la lista<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Tercero de la lista<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ol&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Lista horizontal</h2>
+
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">Catálogo</li>
+        <li class="list-group-item">Sobre nosotros</li>
+        <li class="list-group-item">Ofertas</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group list-group-horizontal&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Catálogo<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Sobre nosotros<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Ofertas<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+      <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Clases contextuales</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item">Sin ninguna clase contextual</li>
+        <li class="list-group-item list-group-item-primary">Primary</li>
+        <li class="list-group-item list-group-item-secondary">Secondary</li>
+        <li class="list-group-item list-group-item-success">Success</li>
+        <li class="list-group-item list-group-item-danger">Danger</li>
+        <li class="list-group-item list-group-item-warning">Warning</li>
+        <li class="list-group-item list-group-item-info">Info</li>
+        <li class="list-group-item list-group-item-light">Light</li>
+        <li class="list-group-item list-group-item-dark">Dark</li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Sin ninguna clase contextual<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-primary&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Primary<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-secondary&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Secondary<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-success&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Success<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-danger&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Danger<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-warning&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Warning<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-info&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Info<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-light&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Light<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item list-group-item-dark&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Dark<span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+  <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Insignias (Badges)</h2>
+
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Notificaciones
+            <span class="badge bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Mensajes
+            <span class="badge bg-danger rounded-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            Avisos
+            <span class="badge bg-success rounded-pill">1</span>
+        </li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            Notificaciones
+            <span style="color: #bb0066; font-weight: bold">&lt;span</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;badge bg-primary rounded-pill&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>14<span style="color: #bb0066; font-weight: bold">&lt;/span&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            Mensajes
+            <span style="color: #bb0066; font-weight: bold">&lt;span</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;badge bg-danger rounded-pill&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>2<span style="color: #bb0066; font-weight: bold">&lt;/span&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item d-flex justify-content-between align-items-center&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            Avisos
+            <span style="color: #bb0066; font-weight: bold">&lt;span</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;badge bg-success rounded-pill&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>1<span style="color: #bb0066; font-weight: bold">&lt;/span&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Opción 1</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Opción 2</label>
+        </li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-input me-1&quot;</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;firstCheckboxStretched&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;label</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-label stretched-link&quot;</span> <span style="color: #336699">for=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;firstCheckboxStretched&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Opción 1<span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-input me-1&quot;</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;checkbox&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;secondCheckboxStretched&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;label</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-label stretched-link&quot;</span> <span style="color: #336699">for=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;secondCheckboxStretched&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Opción 2<span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+
+    <br>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+            <label class="form-check-label" for="firstRadio">Opción 1</label>
+        </li>
+        <li class="list-group-item">
+            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+            <label class="form-check-label" for="secondRadio">Opción 2</label>
+        </li>
+    </ul>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;ul</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-input me-1&quot;</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;listGroupRadio&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;firstRadio&quot;</span> <span style="color: #336699">checked</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;label</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-label&quot;</span> <span style="color: #336699">for=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;firstRadio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Opción 1<span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;li</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;list-group-item&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;input</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-input me-1&quot;</span> <span style="color: #336699">type=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;radio&quot;</span> <span style="color: #336699">name=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;listGroupRadio&quot;</span> <span style="color: #336699">value=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;&quot;</span> <span style="color: #336699">id=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;secondRadio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;label</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;form-check-label&quot;</span> <span style="color: #336699">for=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;secondRadio&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Opción 2<span style="color: #bb0066; font-weight: bold">&lt;/label&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/li&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/ul&gt;</span>
+</pre>
+    </div>
+
+    <br><br>
+    <hr>
+
+    <h1>Tarjetas</h1>
+
+    <h2>Ejemplo de tarjeta</h2>
+
+    <div class="card" style="width:400px">
+        <div class="card-header">Header</div>
+        <img class="card-img-top" src="img/foto.jpg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Título</h4>
+            <p class="card-text text-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="btn btn-primary">Botón 1</a>
+            <a href="#" class="btn btn-primary">Botón 2</a>
+        </div>
+        <div class="card-body">
+            <a href="#" class="card-link">Link</a>
+            <a href="#" class="card-link">Otro link</a>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Lista 1</li>
+            <li class="list-group-item">Lista 2</li>
+        </ul>
+        <div class="card-footer">Footer</div>
+    </div>
+
+    <hr>
+
+    <h2>Imágenes</h2>
+
+    <h3>Top</h3>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="img/foto.jpg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-top&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-body&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+    </div>
+
+    <br>
+
+    <h3>Bottom</h3>
+    <div class="card" style="width:400px">
+        <div class="card-body">
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <img class="card-img-bottom" src="img/foto.jpg" alt="Card image">
+    </div>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-body&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-bottom&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+    </div>
+
+    <br>
+
+    <h3>Overlay</h3>
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="img/foto2.jpg" alt="Card image">
+        <div class="card-img-overlay">
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-top&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto2.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-overlay&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+<span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h2>Grupos de tarjetas</h2>
+    <div class="card-group">
+        <div class="card bg-primary border-success" style="width:400px">
+            <img class="card-img-top" src="img/foto.jpg" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">Título</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="card bg-danger border-primary" style="width:400px">
+            <img class="card-img-top" src="img/foto2.jpg" alt="Card image">
+            <div class="card-body text-light">
+                <h4 class="card-title">Título</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+
+        <div class="card bg-success border-danger" style="width:400px">
+            <div class="card-body">
+                <h4 class="card-title">Título</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <img class="card-img-bottom" src="img/foto.jpg" alt="Card image">
+        </div>
+    </div>
+
+    <br>
+
+    <div
+        style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .1em;padding:.2em .6em;">
+        <pre style="margin: 0; line-height: 125%"><span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-group&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card bg-primary border-success&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-top&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-body&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card bg-danger border-ligth&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-top&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto2.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-body text-light&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+
+        <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card bg-success border-danger&quot;</span> <span style="color: #336699">style=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;width:400px&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;div</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-body&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;h4</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-title&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Título<span style="color: #bb0066; font-weight: bold">&lt;/h4&gt;</span>
+                <span style="color: #bb0066; font-weight: bold">&lt;p</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-text&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.<span style="color: #bb0066; font-weight: bold">&lt;/p&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+            <span style="color: #bb0066; font-weight: bold">&lt;img</span> <span style="color: #336699">class=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;card-img-bottom&quot;</span> <span style="color: #336699">src=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;img/foto.jpg&quot;</span> <span style="color: #336699">alt=</span><span style="color: #dd2200; background-color: #fff0f0">&quot;Card image&quot;</span><span style="color: #bb0066; font-weight: bold">&gt;</span>
+        <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+    <span style="color: #bb0066; font-weight: bold">&lt;/div&gt;</span>
+</pre>
+    </div>
+
+    <hr>
+
+    <h1>Ejercicio</h1>
+
+    <div class="d-flex flex-row justify-content-between">
+
+        <div class="  w-50">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>Crear una tarjeta como la siguiente</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>En el header se indica su profesión (actor, escritor, músico, ...)</h4>
+                </li>
+                <li class="list-group-item">
+                    <h4>Incluir una lista sin bordes ni esquinas redondeadas con 3 de sus obras y que al pulsar nos
+                        lleve a una página de wikipedia</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="card w-25 ">
+            <div class="card-header">Actor</div>
+            <img src="img/tom.jpg" alt="Foto">
+            <div class="card-body">
+                <h4 class="card-title">Tom Hanks</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+            <ol class="list-group list-group-flush">
+                <a href="https://es.wikipedia.org/wiki/Forrest_Gump_(pel%C3%ADcula)"
+                    class="list-group-item list-group-item-action">Forrest Gump</a>
+                <a href="https://es.wikipedia.org/wiki/Big" class="list-group-item list-group-item-action">Big</a>
+                <a href="https://es.wikipedia.org/wiki/N%C3%A1ufrago"
+                    class="list-group-item list-group-item-action">Cast
+                    Away</a>
+            </ol>
+        </div>
+
+
+    </div>
+
+    <br><br><br>
+
+</body>
+
+</html>

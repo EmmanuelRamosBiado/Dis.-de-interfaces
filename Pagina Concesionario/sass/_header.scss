@@ -1,0 +1,126 @@
+//Diseño del header, import mix para poder usar los mixins
+
+@import "mix";
+
+$textoHeader: rgb(0, 0, 0);
+$backgroundHeader: rgb(255, 255, 255);
+$buttonBackground: rgba(255, 255, 255, 0.05);
+$hoverTexto: rgb(255, 89, 0);
+$fuenteContacto: 1vw;
+
+
+
+.containerHeader {
+    @include displaySpace;
+    @include shadow;
+    background-color: $backgroundHeader;
+    height: 10vh;
+    width: 100%;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+
+
+
+    .logo {
+        @include altura(20vh);
+        @include paddingMargin(0.1rem);
+    }
+
+    .contacto {
+        @include displaySpace;
+        width: 100%;
+       
+        .correo,.telefono {
+            @include displayFlex();
+            
+            a {
+                color: $textoHeader;
+                font-size: $fuenteContacto;
+                margin: .5rem;
+                text-decoration: none;
+                @include ease(200ms);
+                @include fontSegoeUI(0.8rem, 500, rgb(0, 0, 0));
+            }
+
+            a:hover{
+                border-bottom: 1px solid $hoverTexto;
+                color: $hoverTexto;
+                font-size:1rem;
+                @include ease(200ms);
+            }
+        }
+    }
+
+
+    .menuNavegacion {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+
+        .navega {
+            color: $textoHeader;
+            background-color: $buttonBackground;
+            border: none;
+            width: 100%;
+
+            text: {
+                decoration: none;
+                align: center;
+            }
+
+            font: {
+                size: 0.8rem;
+                weight: bolder;
+            }
+
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .navega:hover {
+            color: $hoverTexto;
+            font-size: 1.1rem;
+            transition: floor($number: 200)
+        }
+    }
+
+
+
+    .logIn {
+            .boton1{
+                background-color:rgb(10, 180, 10);
+                color: white;
+            }
+            .boton2{
+                background-color:rgb(244, 244, 244);
+            }
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        height: 100%;
+        width: 40%;
+        align-content: center;
+        align-items: center;
+        gap: 1rem;
+        button {
+            border-radius: 5px;
+            border: 0px;
+            padding: 10px;
+            
+            &:hover{
+                transform: scale(1.1);
+                @include ease(500ms);
+                font-weight: 500;
+            }
+
+
+
+        }
+
+    }
+} 

@@ -1,0 +1,465 @@
+@charset "UTF-8";
+.containerHeader {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0 0 0.5rem rgb(255, 89, 0));
+  background-color: rgb(255, 255, 255);
+  height: 10vh;
+  width: 100%;
+  top: 0px;
+  margin: 0;
+  padding: 0;
+}
+.containerHeader .logo {
+  height: 20vh;
+  max-height: 20vh;
+  min-height: 20vh;
+  padding: 0.05rem;
+  margin: 0.1rem;
+}
+.containerHeader .contacto {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.containerHeader .contacto .correo, .containerHeader .contacto .telefono {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.containerHeader .contacto .correo a, .containerHeader .contacto .telefono a {
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
+  margin: 0.5rem;
+  text-decoration: none;
+  transition: ease 200ms;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+.containerHeader .contacto .correo a:hover, .containerHeader .contacto .telefono a:hover {
+  border-bottom: 1px solid rgb(255, 89, 0);
+  color: rgb(255, 89, 0);
+  font-size: 1rem;
+  transition: ease 200ms;
+}
+.containerHeader .menuNavegacion {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.containerHeader .menuNavegacion .navega {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bolder;
+  height: 100%;
+  cursor: pointer;
+}
+.containerHeader .menuNavegacion .navega:hover {
+  color: rgb(255, 89, 0);
+  font-size: 1.1rem;
+  transition: 200;
+}
+.containerHeader .logIn {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  height: 100%;
+  width: 40%;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.containerHeader .logIn .boton1 {
+  background-color: rgb(10, 180, 10);
+  color: white;
+}
+.containerHeader .logIn .boton2 {
+  background-color: rgb(244, 244, 244);
+}
+.containerHeader .logIn button {
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+}
+.containerHeader .logIn button:hover {
+  transform: scale(1.1);
+  transition: ease 500ms;
+  font-weight: 500;
+}
+
+footer {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 89, 0));
+  background-color: white;
+  margin: 0;
+  height: 10vh;
+  width: 100vw;
+  margin-top: auto;
+}
+footer .containerFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+footer .containerFooter .legal {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+footer .containerFooter .legal .link-legales {
+  display: flex;
+  gap: 1rem;
+}
+footer .containerFooter .legal .link-legales a {
+  text-decoration: none;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+footer .containerFooter .legal .link-legales a:hover {
+  color: rgb(255, 89, 0);
+  transition: ease 500ms;
+}
+footer .containerFooter .contacto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .containerFooter .contacto .red {
+  padding: 0.15rem;
+  margin: 0.3rem;
+  transition: ease 500ms;
+}
+footer .containerFooter .contacto .red:hover {
+  transition: ease 500ms;
+  filter: drop-shadow(0 0 0.5rem rgb(255, 89, 0));
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50rem;
+}
+body h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+body p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+main b {
+  font-weight: 700;
+  color: rgb(255, 89, 0);
+}
+main h1 {
+  margin: 0%;
+}
+main hr {
+  width: 50%;
+}
+main .main-1 {
+  margin-right: 15%;
+  margin-left: 15%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-direction: column;
+  height: 40vh;
+  max-height: 40vh;
+  min-height: 40vh;
+}
+main .main-1 button {
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 0px;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+main .main-1 button:hover {
+  transform: scale(1.1);
+  transition: ease 500ms;
+  font-weight: 600;
+}
+main .main-1 .boton-2 {
+  background-color: rgb(255, 89, 0);
+  color: white;
+}
+main .main-1 .boton-1 {
+  background-color: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+}
+main .main-2 .group-flex {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .main-2 .marcas {
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15), 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+main .main-2 h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+main .main-2 ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 3rem;
+  width: 50%;
+}
+main .main-2 ul img {
+  height: 5vh;
+  max-height: 5vh;
+  min-height: 5vh;
+}
+main .main-2 a, main .main-2 li {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+main .main-2 a:hover, main .main-2 li:hover {
+  transform: scale(1.1);
+  transition: ease 500ms;
+  font-weight: 800;
+  color: rgb(255, 89, 0);
+}
+main .main-2 a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .main-2 .carrocería {
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15), 0 0.5rem 0.8rem rgba(0, 0, 0, 0.15);
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+}
+main .main-2 .carrocería img {
+  height: 7vh;
+  max-height: 7vh;
+  min-height: 7vh;
+}
+main .main-2 .main-3 {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .main-2 .main-3 img {
+  height: 32vh;
+  max-height: 32vh;
+  min-height: 32vh;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+main .main-2 .main-4 {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+main .main-2 .main-4 img {
+  height: 32vh;
+  max-height: 32vh;
+  min-height: 32vh;
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+}
+main .main-2 .main-5 {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+main .main-2 .main-5 h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 650;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+main .main-2 .main-5 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 450;
+  color: rgb(0, 0, 0);
+  margin: 10px;
+}
+main .main-2 .main-5 .testimonio {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 320px;
+  border-radius: 30px;
+  background: #ededed;
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
+main .main-2 .main-5 .testimonio img {
+  height: 6rem;
+  max-height: 6rem;
+  min-height: 6rem;
+  filter: drop-shadow(0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.15));
+}
+
+main {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#buscador-catalogo {
+  background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 2px;
+  width: 95%;
+  border: 2px solid rgb(255, 89, 0);
+  border-radius: 50px;
+  outline: none;
+  margin: 30px;
+  padding: 10px 10px 10px 40px;
+}
+
+.filtros-catalogo {
+  padding: 10px;
+  margin: 5px;
+  background-color: rgb(255, 89, 0);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.lista-catalogo {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.lista-catalogo div.producto-catalogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  width: 29%;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.lista-catalogo div.producto-catalogo .foto-catalogo > img {
+  width: 100%;
+  top: 0;
+  border-radius: 10px;
+}
+.lista-catalogo div.producto-catalogo .infoCoche-catalogo {
+  padding: 0.3rem;
+}
+.lista-catalogo div.producto-catalogo .infoCoche-catalogo .marca-catalogo {
+  padding: 0.25rem;
+  margin: 0.5rem;
+}
+.lista-catalogo div.producto-catalogo .infoCoche-catalogo .nomCoche-catalogo {
+  padding: 0.25rem;
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lista-catalogo div.producto-catalogo .infoCoche-catalogo .precio-catalogo {
+  padding: 0.25rem;
+  margin: 0.5rem;
+  color: rgb(255, 89, 0);
+}
+.lista-catalogo div.producto-catalogo .masInfo-catalogo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.lista-catalogo div.producto-catalogo .masInfo-catalogo .tag-catalogo {
+  font-size: 0.85rem;
+  border-radius: 500px;
+  background-color: rgb(199, 199, 199);
+  margin: 0.1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.lista-catalogo div.producto-catalogo .boton-catalogo {
+  background-color: rgb(255, 89, 0);
+  border: 1px solid rgb(255, 89, 0);
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.lista-catalogo div.producto-catalogo .boton-catalogo:hover {
+  background-color: white;
+  color: rgb(255, 89, 0);
+}
+.lista-catalogo div.producto-catalogo:hover {
+  filter: drop-shadow(0 0 0.5rem rgb(255, 89, 0));
+}
+
+body {
+  box-sizing: border-box;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}/*# sourceMappingURL=style.css.map */

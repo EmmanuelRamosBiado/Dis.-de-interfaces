@@ -1,0 +1,118 @@
+@import "mix";
+
+main{
+    @include fuente();
+}
+
+#buscador-catalogo {
+    // Esto es la imagen ded la lupa
+    background: url(https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-19-32.png) no-repeat 0px 2px;
+    width: 95%;
+    border: 2px solid $hoverTexto;
+    border-radius: 50px;
+    outline: none;
+    margin: 30px;
+    padding: 10px 10px 10px 40px;
+
+}
+
+.filtros-catalogo {
+    padding: 10px;
+    margin: 5px;
+    background-color: $hoverTexto;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.lista-catalogo {
+
+    align-items: stretch;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    div.producto-catalogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+        width: 29%;
+        margin: 1rem;
+        background-color: white;
+        border-radius: 10px;
+
+        .foto-catalogo>img {
+            width: 100%;
+            top: 0;
+            border-radius: 10px;
+        }
+
+        .infoCoche-catalogo {
+            padding: 0.3rem;
+
+            .marca-catalogo {
+                @include paddingMargin(0.5rem);
+            }
+
+            .nomCoche-catalogo {
+                @include paddingMargin(0.5rem);
+                font: {
+                    size: 1.5rem;
+                    weight: bold;
+                }
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .precio-catalogo {
+                @include paddingMargin(0.5rem);
+                color: $hoverTexto;
+            }
+
+
+        }
+
+        .masInfo-catalogo {
+            @include displayFlex();
+            flex-wrap: wrap;
+
+            .tag-catalogo {
+                font-size: 0.85rem;
+                border-radius: 500px;
+                background-color: rgb(199, 199, 199);
+                margin: 0.1rem;
+
+                padding: {
+                    left: 0.5rem;
+                    right: 0.5rem;
+                }
+            }
+        }
+
+        .boton-catalogo {
+            background-color: $hoverTexto;
+            border: 1px solid $hoverTexto;
+            color: white;
+            border-radius: 10px;
+            display: block;
+            margin: 1rem auto;
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                background-color: white;
+                color: $hoverTexto;
+            }
+        }
+
+        &:hover {
+            @include shadow();
+        }
+
+    }
+}

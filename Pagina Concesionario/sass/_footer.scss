@@ -1,0 +1,60 @@
+//Diseño del footer, import mix para poder usar los mixins
+
+@import "mix";
+
+footer {
+    @include shadow();
+    background-color: white;
+    margin: 0;
+    height: 10vh;
+    width: 100vw;
+    margin-top: auto;    
+
+    .containerFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        //centrar contenidos en el eje y
+        align-items: center;
+        
+        width: 100%;
+        .legal{
+            display: flex;
+            align-items: center;
+            gap: 4rem;;    
+            .link-legales{
+                display: flex;
+                gap: 1rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    @include fontSegoeUI(1rem, 500, rgb(0, 0, 0));
+                    &:hover{
+                        color: rgb(255, 89, 0);
+                        @include ease(500ms);
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .red {
+                @include paddingMargin(.3rem);
+                @include ease(500ms);
+            }
+
+            .red:hover{
+                @include ease(500ms);
+                @include shadow();
+            }
+
+
+        }
+
+    }
+
+}

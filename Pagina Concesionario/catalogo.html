@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="containerHeader">
+            <a href="index.html" class="home"><img src="img/logo.png" alt="Logo HolaCar" class="logo"></a>
+            <div class="contacto">
+                <div class="telefono">
+                    <img src="img/telefono.png" alt="telefono" class="tel">
+                    <a href="tel:600000000">600000000</a>
+                </div>
+                <div class="correo">
+                    <img src="img/mail.png" alt="correo" class="mail">
+                    <a href="mailto:holacarconcesionario@gmial.com">holacarconcesionario@gmail.com</a>
+                </div>
+            </div>
+            <div class="menuNavegacion">
+                <button href="catalogo.html" class="navega"
+                    onclick="window.location.href='catalogo.html'">Catálogo</button>
+                <button href="ofertas.html" class="navega">Ofertas</button>
+                <button href="financiacion.html" class="navega">Financiación</button>
+                <button href="contacto.html" class="navega">Contacto</button>
+                <button href="sobrenosotros.html" class="navega">Sobre Nosotros</button>
+            </div>
+            <div class="logIn">
+                <button href="login.html" class="logRegistro boton1">Conectarse</button>
+                <button href="registro.html" class="logRegistro boton2">Registro</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        
+        <!-- Buscador -->
+        <input type="search" placeholder="Buscar coche" id="buscador-catalogo">
+
+        <!-- Filtros -->
+        <select name="marca" class="filtros-catalogo">
+            <option value="0">Marca</option>
+            <option value="1">Peugeot</option>
+            <option value="2">KIA</option>
+            <option value="3">Fiat</option>
+            <option value="4">Peugeot</option>
+            <option value="5">Volkswagen</option>
+            <option value="6">Ford</option>
+        </select>
+
+        <select name="precio" class="filtros-catalogo">
+            <option value="0">Precio</option>
+            <option value="1">> 30.000 €</option>
+            <option value="2">> 25.000 €</option>
+            <option value="3">> 20.000 €</option>
+            <option value="4">> 15.000 €</option>
+            <option value="5">> 10.000 €</option>
+            <option value="6">> 5.000 €</option>
+        </select>
+
+        <select name="transmisión" class="filtros-catalogo">
+            <option value="0">Transmisión</option>
+            <option value="1">Automático</option>
+            <option value="2">Manual</option>
+        </select>
+
+        <select name="kilometro" class="filtros-catalogo">
+            <option value="0">Kilómetros</option>
+            <option value="1">> 100.000</option>
+            <option value="2">> 75.000</option>
+            <option value="3">> 50.000</option>
+            <option value="4">> 25.000</option>
+            <option value="5">< 25.000</option>
+        </select>
+    
+
+        <div class="lista-catalogo">
+
+            <!--1-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Peugeot2008.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Peugeot</div>
+                    <div class="nomCoche-catalogo">Allure Puretech 100 S&S 6 Vel. MAN</div>
+                    <div class="precio-catalogo">PRECIO: 23.000 €</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2022</div>
+                    <div class="tag-catalogo">100 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">5.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--2-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/KIA-optima.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">KIA</div>
+                    <div class="nomCoche-catalogo">1.7 CRDi VGT Concept Eco-Dynamics</div>
+                    <div class="precio-catalogo">PRECIO: 15.000 €</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2017</div>
+                    <div class="tag-catalogo">141 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">110.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--3-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Fiat-Tipo.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Fiat</div>
+                    <div class="nomCoche-catalogo">5P 1.4 T-Jet 88kW (120CV) S-Design</div>
+                    <div class="precio-catalogo">PRECIO: 16.000 €</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2020</div>
+                    <div class="tag-catalogo">120 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">32.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--4-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Peugeot-508.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Peugeot</div>
+                    <div class="nomCoche-catalogo">5P GT BlueHDi 130kW (180) S&S EAT8</div>
+                    <div class="precio-catalogo">PRECIO: 26.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2019</div>
+                    <div class="tag-catalogo">180 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Automático</div>
+                    <div class="tag-catalogo">87.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--5-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Volkswagen-Golf.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Volkswagen</div>
+                    <div class="nomCoche-catalogo">Business 1.6 TDI 85kW (115CV)</div>
+                    <div class="precio-catalogo">PRECIO: 18.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2020</div>
+                    <div class="tag-catalogo">115 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">79.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--6-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Ford-Focus.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Ford</div>
+                    <div class="nomCoche-catalogo">1.5 Ecoblue 88kW ST-Line</div>
+                    <div class="precio-catalogo">PRECIO: 22.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2020</div>
+                    <div class="tag-catalogo">120 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">42.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--7-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Fiat-500.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Fiat</div>
+                    <div class="nomCoche-catalogo">Lounge 1.2 8v 51KW (69 CV)</div>
+                    <div class="precio-catalogo">PRECIO: 12.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2020</div>
+                    <div class="tag-catalogo">69 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">36.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--8-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Dacia-Logan.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Dacia</div>
+                    <div class="nomCoche-catalogo">Essential 1.0 55kW (75CV) - 18</div>
+                    <div class="precio-catalogo">PRECIO: 8.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2018</div>
+                    <div class="tag-catalogo">73 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">69.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--9-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Skoda-Superb.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Škoda</div>
+                    <div class="nomCoche-catalogo">1.6 TDI CR 88KW (120cv) DSG Active</div>
+                    <div class="precio-catalogo">PRECIO: 16.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2018</div>
+                    <div class="tag-catalogo">120 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Automático</div>
+                    <div class="tag-catalogo">143.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--10-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Citroen-C.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Citroën</div>
+                    <div class="nomCoche-catalogo">VTi 85KW (115CV) EAT6 Shine</div>
+                    <div class="precio-catalogo">PRECIO: 12.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2018</div>
+                    <div class="tag-catalogo">115 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Automático</div>
+                    <div class="tag-catalogo">51.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--11-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Mazda-6.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Mazda</div>
+                    <div class="nomCoche-catalogo">2.0 GE 107kW (145CV) Style Nav</div>
+                    <div class="precio-catalogo">PRECIO: 19.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2018</div>
+                    <div class="tag-catalogo">145 CV</div>
+                    <div class="tag-catalogo">Gasolina</div>
+                    <div class="tag-catalogo">Manual</div>
+                    <div class="tag-catalogo">106.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+            <!--12-->
+            <div class="producto-catalogo">
+                <div class="foto-catalogo"><img src="./img/Renault-Talisman.jpg" alt="Coche"></div>
+                <div class="infoCoche-catalogo">
+                    <div class="marca-catalogo">Renault</div>
+                    <div class="nomCoche-catalogo">Zen Energy dCi 118kW (160CV) T. T. EDC</div>
+                    <div class="precio-catalogo">PRECIO: 20.000 $</div>
+                </div>
+                <div class="masInfo-catalogo">
+                    <div class="tag-catalogo">2018</div>
+                    <div class="tag-catalogo">160 CV</div>
+                    <div class="tag-catalogo">Diésel</div>
+                    <div class="tag-catalogo">Automático</div>
+                    <div class="tag-catalogo">117.000 KM</div>
+                </div>
+                <button class="boton-catalogo">COMPRAR</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="legal">
+                <p><b>Marca registrada HolaCar™</b><br>Avenida de Las Rosas,Nº5</p>
+                <div class="link-legales">
+                    <a href="">Aviso Legal</a>
+                    <a href="">Política de Privacidad</a>
+                </div>
+
+            </div>
+            <div class="contacto">
+                <div class="red">
+                    <a href="tel:600000000"><img src="img/telefono.png" alt="telefono" class="tel"></a>
+                </div>
+                <div class="red">
+                    <a href="mailto:holacarconcesionario@gmail.com"><img src="img/mail.png" alt="correo"
+                            class="mail"></a>
+                </div>
+                <div class="red">
+                    <a href="https://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+                </div>
+                <div class="red">
+                    <a href="https://instagram.com"><img src="img/instagram.png" alt="instagram"></a>
+                </div>
+                <div class="red">
+                    <a href="https://twitter.com"><img src="img/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

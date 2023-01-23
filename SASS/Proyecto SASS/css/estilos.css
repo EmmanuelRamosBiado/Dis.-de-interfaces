@@ -5,9 +5,44 @@ body {
   margin: auto;
 }
 
-.tituloParrafo {
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.tituloParrafo-1 {
+  border-radius: 20px;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  background-color: rgb(20, 0, 19);
+}
+
+.tituloParrafo-2 {
+  border-radius: 20px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: rgb(12, 0, 30);
+}
+
+.tituloParrafo-3 {
+  border-radius: 20px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: rgb(20, 0, 19);
+}
+
+.tituloParrafo-4 {
+  border-radius: 20px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  background-color: rgb(12, 0, 30);
 }
 
 h2 {
@@ -15,13 +50,11 @@ h2 {
   text-align: center;
   text-decoration: underline;
   font-family: "Roboto";
-  font-size: 1.75rem;
-  font-weight: bold;
 }
 
 p {
   color: white;
   text-align: justify;
   font-family: "Raleway";
-  font-size: 1.25rem;
+  padding: 1rem;
 }/*# sourceMappingURL=estilos.css.map */
