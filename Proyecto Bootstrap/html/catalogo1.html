@@ -15,7 +15,7 @@
     <link rel="icon" type="image/x-icon" href="../img/logo.png">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
     <!-- Header -->
     <header>
@@ -27,22 +27,30 @@
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
+                        <li class="nav-item py-3">
                             <a class="btn btn-outline-danger border-0" href="./catalogo1.html">
                                 CATÁLOGO
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item py-3">
                             <a class="btn btn-outline-danger border-0" href="./acercaDe.html">
                                 ACERCA DE
                             </a>
                         </li>
                     </ul>
-                    
-                    <form class="d-flex">
+
+                    <button class="btn btn-danger me-5" type="button" aria-label="Cesta"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg><span class="badge bg-black ms-2">0</span></button>
+
+                    <form class="d-flex py-3">
                         <input class="form-control me-2" type="text" placeholder="ESCRIBE AQUÍ">
-                        <button class="btn btn-danger" type="button" aria-label="Botón buscar"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <button class="btn btn-danger" type="button" aria-label="Botón buscar"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
                                 <path
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg></button>
@@ -54,7 +62,7 @@
 
     <!-- Main -->
     <main class="flex-fill">
-        <div class="container px-2 py-5">
+        <div class="container px-2 py-5 my-5">
 
             <div class="input-group mt-5 w-50">
                 <div class="input-group-text bg-danger">
